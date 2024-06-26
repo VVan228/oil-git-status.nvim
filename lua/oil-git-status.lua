@@ -185,7 +185,7 @@ local highlight_groups = generate_highlight_groups()
 local function setup(config)
   current_config = vim.tbl_extend("force", default_config, config or {})
 
-  validate_oil_config()
+  -- validate_oil_config()
 
   vim.api.nvim_create_autocmd({ "FileType" }, {
     pattern = { "oil" },
